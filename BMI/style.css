@@ -1,0 +1,96 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right , #007bff , #6c757d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+header h1{
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-fields{
+    margin-bottom: 20px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: black;
+}
+
+input[type="number"]{
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    outline: none;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    transition: background-color 0.3s transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+
+}
+
+button:hover{
+    background-color: #238a3f;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.result{
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0  4px rgba(0,0,0,0.1);
+
+}
+
+#bmiValue{
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;  
+}
+
+#bmiCategory{
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+#suggestion{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}

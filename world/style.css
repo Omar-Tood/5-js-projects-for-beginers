@@ -1,0 +1,101 @@
+/* Apply background gradient and set full viewport height */
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #541388, #23293e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    box-sizing: border-box;
+    
+}
+
+
+/* container */
+
+.container{
+    background-color: #f5f6f7;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px  rgba(0,0,0 , 0.2);
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    color: #333;
+    box-sizing: border-box;
+    
+}
+
+/* the title */
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right , #6a11cb, #2575fc);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 36px;
+    margin-bottom: 20px;
+
+}
+
+/* textarea */
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    box-shadow:  0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    background-color: #e9ecef;
+    color: #333;
+    resize: none;
+    outline: none;
+    box-sizing: border-box;  
+}
+
+.stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.stat-box{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 24%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+   
+}
+
+.stat-box p {
+    margin: 0;
+    font-size: 14px;
+    color:#333;
+
+}
+
+.stat-box p:first-child{
+    font-size: 32px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+footer {
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+    text-align: center;
+  }

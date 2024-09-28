@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Color Picker</h1>
+        </header>
+
+        <div class="palette">
+            <!-- Adding more colors -->
+            <div class="color" style="background-color: #FF5733;" data-hex="#FF5733"></div>
+            <div class="color" style="background-color: #33FF57;" data-hex="#33FF57"></div>
+            <div class="color" style="background-color: #3357FF;" data-hex="#3357FF"></div>
+            <div class="color" style="background-color: #FFFF33;" data-hex="#FFFF33"></div>
+            <div class="color" style="background-color: #FF33FF;" data-hex="#FF33FF"></div>
+            <div class="color" style="background-color: #33FFFF;" data-hex="#33FFFF"></div>
+            <div class="color" style="background-color: #333333;" data-hex="#333333"></div>
+            <div class="color" style="background-color: #FFFFFF;" data-hex="#FFFFFF"></div>
+            <div class="color" style="background-color: #800080;" data-hex="#800080"></div>
+            <div class="color" style="background-color: #FFD700;" data-hex="#FFD700"></div>
+        </div>
+
+        <div class="selected-color-display">
+            <p>
+                 Selected Color:<span id="selectedColorHex">#FFFFFF</span>
+                <button id="copyHexBtn">Copy</button>
+            </p>
+            <div id="colorBox" class="color-box" style="background-color: #FFFFFF;"></div>
+        </div>
+
+        <div class="custom-color-input">
+            <input type="text" id="customHexInput" placeholder="Enter custom hex code" maxlength="7">
+            <button id="addCustomColorBtn">Add Custom Color</button>
+            <!-- <input type="color" id="colorPicker" /> -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

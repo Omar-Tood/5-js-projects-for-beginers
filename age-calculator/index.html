@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Age Calculator</h1>
+        </header>
+        <div class="calculator-contai">
+            <div class="input-group">
+                <label for="birthYear">Enter Your Date of Birth:</label>
+                <input type="date" id="birthYear">
+            </div>
+            <div class="button-group">
+                <button id="calculate" class="calculate-button">Calculate Age</button>
+                <button id="reset" class="reset-button">Reset</button>
+            </div>
+            <div class="result-display">
+                <p id="ageDisplay">Your age will appear here</p>
+                <p id="weekDisplay"></p>
+                <p id="dayDisplay"></p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2024 age Calculator. All rights reserved</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

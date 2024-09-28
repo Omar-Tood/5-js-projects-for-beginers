@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('https://images.pexels.com/photos/3171837/pexels-photo-3171837.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+    text-align: center;
+}
+
+.countdown-container{
+    background: rgba(0,0,0, 0.8);
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    animation: fadeIn 1s ease-out;
+
+}
+
+h1{
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    animation: slideDown 1s ease-out;
+}
+
+.countdown{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.time{
+    background-color: rgba(255,255,255, 0.1);
+    padding: 20px 15px;
+    border-radius: 10px;
+    width: 100px;
+    box-shadow:  inset 0 0 5px rgba(0,0,0,0.2);
+    animation: zoomIn 0.5s ease-out;
+}
+
+.time span{
+    font-size: 48px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    animation: scaleUp 0.5s ease-out;
+}
+
+.time p{
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: fadeInText 1.2s ease-out;
+}
+
+
+/* animation */
+
+@keyframes fadeIn{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slideDown{
+    from {opacity: translateY(-50px); opacity: 0;}
+    to {opacity: translateY(0); opacity: 1;}
+}
+
+@keyframes zoomIn{
+    from {opacity: scale(0.8); opacity: 0}
+    to {opacity: scale(1); opacity: 1;}
+}
+
+
+@keyframes scaleUp {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+}
+
+@keyframes fadeInText {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
